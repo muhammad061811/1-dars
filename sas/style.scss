@@ -1,0 +1,26 @@
+.child-1{
+    width: 10px;
+    height: 20px;
+    background-color: #fff;
+    animation-duration: .5s;
+    animation-direction: alternate;
+    animation-name: first;
+    animation-delay: .1s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-out;
+    position: relative;
+}
+.parent{
+    display: flex;
+    align-self: flex-end;
+}
+body{
+    background-color: #4492F4;
+}
+@keyframes first {
+    to{
+       transform: scaleY(2);
+       transform-origin: bottom; 
+    }
+    
+}
